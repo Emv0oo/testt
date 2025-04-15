@@ -1,0 +1,38 @@
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивные предметы</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            border: 1px solid #000;
+            background-color: #f0f0f0; /* Цвет фона для лучшего контраста */
+        }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1; /* Убедитесь, что кнопки будут поверх канваса */
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="addShape('rectangle')">Добавить Куб</button>
+        <button onclick="addShape('circle')">Добавить Круг</button>
+        <button onclick="addShape('triangle')">Добавить Треугольник</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
