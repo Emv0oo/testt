@@ -54,3 +54,28 @@ window.addEventListener('resize', () => {
     Matter.Body.setPosition(platform, { x: window.innerWidth / 2, y: window.innerHeight - 20 });
     Matter.Body.scale(platform, window.innerWidth / platform.bounds.max.x, 1); // Масштабируем платформу
 });
+
+let wallsVisible = true; // Переменная для отслеживания состояния стен
+
+document.getElementById('toggleWalls').addEventListener('click', function() {
+    wallsVisible = !wallsVisible; // Меняем состояние стен
+    toggleWalls(wallsVisible);
+});
+
+function toggleWalls(visible) {
+    if (visible) {
+        // Код для добавления боковых стен
+        addWalls();
+    } else {
+        // Код для удаления боковых стен
+        removeWalls();
+    }
+}
+
+function addWalls() {
+    // Логика для добавления боковых стен
+}
+
+function removeWalls() {
+    // Логика для удаления боковых стен
+}
